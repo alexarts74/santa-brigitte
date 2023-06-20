@@ -1,0 +1,8 @@
+<div class="container">
+  <h1>Voici toute les chambres</h1>
+  <% @rooms.each do |room| %>
+    <%= room.image %>
+    <%= room.name %>
+    <%= room.description %>
+    <%= room.price %>
+</div>
