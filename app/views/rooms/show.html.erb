@@ -1,0 +1,12 @@
+<h1><%= @room.name %></h1>
+
+<div class="container">
+  <%= cl_image_tag @room.image.key, crop: :fill, width: "300", height: "300"%>
+  <%= @room.description %>
+  <%= @room.price %>
+  <% if user_signed_in? %>
+    <%= button_to "Réserver cette chambre", clothe_checkout_path(@clothe), method: :post, remote: true, data: { turbo: false } %>
+  <% else %>
+    <%= button_to "Réserver cette chambre", new_user_registration_path, method: :get%>
+  <% end %>
+</div>
