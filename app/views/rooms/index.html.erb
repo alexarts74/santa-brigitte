@@ -1,8 +1,9 @@
 <div class="container">
   <h1>Voici toute les chambres</h1>
   <% @rooms.each do |room| %>
-    <%= room.image %>
+    <%= cl_image_tag room.image.key, crop: :fill, width: "300", height: "300"%>
     <%= room.name %>
     <%= room.description %>
     <%= room.price %>
+  <% end %>
 </div>
