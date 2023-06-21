@@ -4,7 +4,8 @@ puts "user is creating ..."
 
 User.destroy_all
 
-brigitte = User.create!(firstname: 'Brigitte', lastname: 'Santa', email: 'brigitte@gmail.com', password: 'qwertz')
+brigitte = User.create!(firstname: 'Brigitte', lastname: 'Santa', email: 'brigitte@gmail.com', password: 'qwertz', admin: true)
+User.create!(firstname: 'Alex', lastname: 'Artus', email: 'alex@gmail.com', password: 'qwertz', admin: true)
 
 puts "user created"
 

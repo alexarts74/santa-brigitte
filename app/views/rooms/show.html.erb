@@ -1,12 +1,19 @@
 <h1><%= @room.name %></h1>
 
-<div class="container">
+<div ro="container">
   <%= cl_image_tag @room.image.key, crop: :fill, width: "300", height: "300"%>
   <%= @room.description %>
   <%= @room.price %>
   <% if user_signed_in? %>
-    <%= button_to "Réserver cette chambre", clothe_checkout_path(@clothe), method: :post, remote: true, data: { turbo: false } %>
+    <%# <%= button_to "Réserver cette chambre", room_checkout_path(@room), method: :post, remote: true, data: { turbo: false } %>
   <% else %>
     <%= button_to "Réserver cette chambre", new_user_registration_path, method: :get%>
+  <% end %>
+
+
+  <%= link_to "Back", rooms_path %>
+  <% if user_signed_in? && current_user.admin == true %>
+    <p><%= link_to "Editer cette chambre", edit_room_path(@room) %></p>
+    <p><%= link_to "Supprimer cette chambre", room_path(@room), data: { turbo_method: :delete, turbo_confirm: "Are you sure?" } %></p>
   <% end %>
 </div>
