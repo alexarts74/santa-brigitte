@@ -15,8 +15,8 @@ class RoomsController < ApplicationController
 
   def create
     @room = Room.new(room_params)
-    room.user = current_user
-    if @clothe.save
+    @room.user = current_user
+    if @room.save
       redirect_to rooms_path
     else
       render :new
@@ -34,6 +34,12 @@ class RoomsController < ApplicationController
     else
       render :edit
     end
+  end
+
+  def destroy
+    @room = Room.find(params[:id])
+    @room.destroy
+    redirect_to rooms_path
   end
 
   private

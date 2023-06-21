@@ -7,4 +7,8 @@
     <%= room.price %>
     <%= link_to "Voir la chambre", room_path(room) %>
   <% end %>
+
+  <% if user_signed_in? && current_user.admin == true %>
+    <%= link_to "Créer une nouvelle chambre", new_room_path %>
+  <% end %>
 </div>
