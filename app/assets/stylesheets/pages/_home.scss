@@ -1,1 +1,26 @@
 // Specific CSS for your home-page
+body{
+  background-color: #f8f6ec;
+}
+
+h1{
+  text-align: center;
+  margin-top: 3%;
+  z-index: 100;
+}
+
+.color-text {
+  color:#e2714d ;
+}
+
+#logo {
+  height: 30px;
+  width: 70px;
+}
+
+.intro {
+  display: flex;
+  margin: 0 auto;
+  height: 600px;
+  width: 80%;
+}
