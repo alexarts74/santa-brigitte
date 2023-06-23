@@ -18,9 +18,74 @@ h1{
   width: 70px;
 }
 
+.bloc1{
+  margin-top: 70px;
+}
+
 .intro {
   display: flex;
   margin: 0 auto;
   height: 600px;
   width: 80%;
+}
+
+.intro-mobile{
+  display: none;
+}
+
+@media only screen and (max-width: 768px) {
+  .intro{
+    display: none;
+  }
+
+  .intro-mobile{
+    display: block;
+    margin: 0 auto;
+    height: 600px;
+    width: 80%;
+  }
+}
+.fleches {
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+}
+
+.fleche-g {
+  width: 400px;
+  height: 200px;
+}
+
+.fleche-d {
+  width: 400px;
+  height: 200px;
+}
+
+.text-button {
+  text-decoration: none;
+  color: white;
+  text-align: center;
+  background-color: black;
+  text-decoration: none;
+  border: none;
+  display: flex;
+  justify-content: center;
+  width: 20%;
+  border-radius: 5px;
+  padding: 10px 20px;
+  font-size: 16px;
+  transition: transform .2s;
+}
+
+.text-button:hover{
+  text-decoration: none;
+  -ms-transform: scale(1.2); /* IE 9 */
+  -webkit-transform: scale(1.2); /* Safari 3-8 */
+  transform: scale(1.2);
+}
+
+.button {
+  display: flex;
+  justify-content: center;
+  margin-top: 0px;
 }
