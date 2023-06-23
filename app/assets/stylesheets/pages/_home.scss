@@ -1,4 +1,8 @@
 // Specific CSS for your home-page
+body{
+  font-family: 'Kanit', sans-serif;
+}
+
 h2{
   text-align: center;
   margin-top: 5%;
@@ -26,6 +30,8 @@ h2{
   margin: 0 auto;
   height: 600px;
   width: 80%;
+  box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+  border-radius: 8px;
 }
 
 .intro-mobile{
@@ -106,4 +112,8 @@ h2{
 
 .first-col {
   padding-right: 30px;
+}
+
+.subtitle {
+  margin-bottom: 24px;
 }
