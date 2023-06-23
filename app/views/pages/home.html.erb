@@ -1,15 +1,26 @@
-<div class="contanier">
-  <div class="section1">
-    <div class="bloc1">
-      <%= image_tag "pres-intro.png", alt: "Description home", width: 600, class: "intro" %>
-      <%= image_tag "Santa Brigida Bed And Breakfast phone.png", alt: "Description home", class: "intro-mobile" %>
-      <div class="fleches">
-        <%= image_tag "fleche-g.png", alt: "fleche", class: "fleche-g" %>
-        <%= image_tag "fleche-d.png", alt: "fleche", class: "fleche-d" %>
+<body>
+  <div class="contanier">
+    <div class="section1">
+      <div class="bloc1">
+        <%= image_tag "pres-intro.png", alt: "Description home", width: 600, class: "intro" %>
+        <%= image_tag "Santa Brigida Bed And Breakfast phone.png", alt: "Description home", class: "intro-mobile" %>
+        <div class="fleches">
+          <%= image_tag "fleche-g.png", alt: "fleche", class: "fleche-g" %>
+          <%= image_tag "fleche-d.png", alt: "fleche", class: "fleche-d" %>
+        </div>
+        <p class="button"><%= link_to "Voir les chambres", rooms_path, class: "text-button" %></p>
       </div>
-      <p class="button"><%= link_to "Voir les chambres", rooms_path, class: "text-button" %></p>
-    </div>
-    <div class="bloc2">
+      <div class="container">
+        <div class="row">
+          <div class="col-6 first-col">
+            <h2 class="subtitle">Chi è sotto?</h2>
+            <p>Arrivati al Bed and Breakfast. lo stress della vita quotidiana è ormai dimenticato.<br><br>Conserva infatti il suo fascino di tipico paesino montano luogo tranquillo e silenzioso, ed oltre ad offrire diverse possibilità per lo svago ed il riposo, molte sono le escursioni che potrete scoprire... ma non solo, potrete anche scegliere le diverse attività da svolgere.</p>
+          </div>
+          <div class="col-6">
+            <%= image_tag "chaise_jus_orange.jpeg", alt: "petit dejeuner", class: "petit-dej" %>
+          </div>
+        </div>
+      </div>
     </div>
   </div>
-</div>
+</body>

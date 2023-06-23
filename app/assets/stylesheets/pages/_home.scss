@@ -1,11 +1,7 @@
 // Specific CSS for your home-page
-body{
-  background-color: #f8f6ec;
-}
-
-h1{
+h2{
   text-align: center;
-  margin-top: 3%;
+  margin-top: 5%;
   z-index: 100;
 }
 
@@ -19,7 +15,10 @@ h1{
 }
 
 .bloc1{
-  margin-top: 70px;
+  margin-top: -20px;
+  padding-top: 70px;
+  background-color: #f5f0db;
+  padding-bottom: 32px;
 }
 
 .intro {
@@ -87,5 +86,24 @@ h1{
 .button {
   display: flex;
   justify-content: center;
-  margin-top: 0px;
+}
+
+.petit-dej {
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+  border-radius: 6px;
+  width: 550px;
+  height: 400px;
+}
+
+.row {
+  display: flex;
+  align-items: center;
+  --bs-gutter-x: 0;
+  --bs-gutter-y: 0;
+}
+
+.first-col {
+  padding-right: 30px;
 }
