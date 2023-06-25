@@ -4,4 +4,6 @@ Rails.application.routes.draw do
   resources :rooms do
     resources :reservations, only: [:new, :create, :destroy]
   end
+  get '/my_account', to: 'users#my_account'
+  get '/contact', to: 'users#contact'
 end

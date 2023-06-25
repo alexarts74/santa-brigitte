@@ -3,7 +3,6 @@ class UsersController < ApplicationController
     @rooms = current_user.rooms
   end
 
-  def dog_params
-    params.require(:user).permit(:firstname, :lastname, :photo)
+  def contact
   end
 end
