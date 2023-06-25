@@ -1,9 +1,11 @@
 Rails.application.routes.draw do
   devise_for :users
   root to: "pages#home"
-  resources :rooms do
-    resources :reservations, only: [:new, :create, :destroy]
-  end
+  resources :rooms
+  resources :reservations, only: [:new, :create, :destroy]
+  resources :reservations, only: %i[new create]
+
+
   get '/my_account', to: 'users#my_account'
-  get '/contact', to: 'users#contact'
+  # get '/contact', to: 'reservations#create'
 end
