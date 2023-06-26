@@ -1,8 +1,5 @@
 class ReservationsController < ApplicationController
 
-  def contact
-  end
-
 end
 
 
