@@ -7,4 +7,5 @@ Rails.application.routes.draw do
 
   get '/my_account', to: 'users#my_account'
   get '/contact', to: 'reservations#contact'
+  get '/storiaecultura', to: 'pages#storia'
 end
