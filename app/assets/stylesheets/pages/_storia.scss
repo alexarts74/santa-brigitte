@@ -7,10 +7,10 @@
   border-radius: 8px;
 }
 
-.first-col {
+.first-column {
   display: inline-block;
   vertical-align: text-top;
-  background-color: violet;
+  background-color: #e2714d;
   border-radius: 8px;
   color: white;
   box-shadow: rgb(38, 57, 77) 8px 20px 30px -10px;
@@ -19,7 +19,6 @@
 .second-col {
   display: inline-block;
   vertical-align: text-top;
-  background-color: yellow;
   border-radius: 8px;
   box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
 }
@@ -29,7 +28,7 @@
   text-align: center;
 }
 
-.first-col:hover{
-  background-color: yellow;
+.first-column:hover{
+  background-color: white;
   color: black;
 }

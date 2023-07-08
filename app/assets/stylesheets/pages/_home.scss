@@ -3,6 +3,103 @@ body{
   font-family: 'Kanit', sans-serif;
 }
 
+.bloc1 {
+  background-image: url("home-image-darken.jpeg");
+  height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 650px;
+  margin-top: -20px;
+  padding-top: 70px;
+  padding-bottom: 32px;
+}
+
+.color-txt {
+  color: #e2714d;
+}
+
+.center-con {
+  display: flex;
+  margin-top: 55px;
+  justify-content: center;
+}
+
+.round {
+  margin-bottom: 50px;
+  position: relative;
+  border: 3px solid #ffffff ;
+  width: 60px;
+  height: 60px;
+  border-radius: 100%;
+}
+
+.span {
+  z-index: 999;
+  height: 3px;
+  margin:0px;
+  width:19px;
+  background: #e2714d;
+  transition: 0.4s ease;
+}
+
+.span:first-child {
+  display: block;
+  position: absolute;
+  transform: rotate(45deg);
+  left: 25%;
+  bottom: 35%;
+}
+
+.span:nth-child(2) {
+  display: block;
+  position: absolute;
+  transform: rotate(-45deg);
+  left: 45%;
+  bottom: 35%;
+}
+
+.span:nth-child(3) {
+  display: block;
+  position: absolute;
+  transform: rotate(45deg);
+  left: 25%;
+  bottom: 54%;
+}
+
+.span:nth-child(4) {
+  display: block;
+  position: absolute;
+  transform: rotate(-45deg);
+  left: 45%;
+  bottom: 54%;
+}
+
+.round:hover .span:nth-child(1) {
+  transform: rotate(-135deg);
+}
+
+.round:hover .span:nth-child(2) {
+  transform: rotate(135deg);
+}
+
+.round:hover .span:nth-child(3) {
+  transform: rotate(225deg);
+}
+
+.round:hover .span:nth-child(4) {
+  transform: rotate(-225deg);
+}
+
+.h1-home {
+  color: white;
+  text-align: center;
+  font-size: 54px;
+  font-weight: 700;
+  margin-top: 96px;
+  margin-bottom: 96px;
+}
+
 h2{
   text-align: center;
   margin-top: 5%;
@@ -18,67 +115,11 @@ h2{
   width: 70px;
 }
 
-.bloc1{
-  margin-top: -20px;
-  padding-top: 70px;
-  background-color: #f5f0db;
-  padding-bottom: 32px;
-}
-
-.intro {
-  display: flex;
-  margin: 0 auto;
-  height: 600px;
-  width: 80%;
-  box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
-  border-radius: 8px;
-  transition: transform .2s;
-}
-
-.intro:hover {
-  -ms-transform: scale(1.1); /* IE 9 */
-  -webkit-transform: scale(1.1); /* Safari 3-8 */
-  transform: scale(1.1);
-}
-
-.intro-mobile{
-  display: none;
-}
-
-@media only screen and (max-width: 768px) {
-  .intro{
-    display: none;
-  }
-
-  .intro-mobile{
-    display: block;
-    margin: 0 auto;
-    height: 600px;
-    width: 80%;
-  }
-}
-.fleches {
-  display: flex;
-  justify-content: center;
-  margin-top: 50px;
-  gap: 400px;
-}
-
-.fleche-g {
-  width: 100px;
-  height: 160px;
-}
-
-.fleche-d {
-  width: 100px;
-  height: 150px;
-}
-
 .text-button {
   text-decoration: none;
-  color: white;
+  color: black;
   text-align: center;
-  background-color: black;
+  background-color: white;
   text-decoration: none;
   border: none;
   width: 20%;

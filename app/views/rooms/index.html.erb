@@ -1,12 +1,17 @@
 <div class="container">
   <h1>Voici toute les chambres</h1>
-  <% @rooms.each do |room| %>
-    <%= cl_image_tag room.image.key, crop: :fill, width: "300", height: "300"%>
-    <%= room.name %>
-    <%= room.description %>
-    <%= room.price %>
-    <%= link_to "Voir la chambre", room_path(room) %>
-  <% end %>
+
+  <div class="cardss">
+    <% @rooms.each do |room| %>
+      <div class="carde">
+        <%= cl_image_tag room.image.key, class: "card-img"%>
+        <p class="card-title"><%= room.name%></p>
+        <%= room.description %>
+        <%= room.price %>
+        <%= link_to "Voir la chambre", room_path(room) %>
+      </div>
+    <% end %>
+  </div>
 
   <% if user_signed_in? && current_user.admin == true %>
     <%= link_to "Créer une nouvelle chambre", new_room_path %>
